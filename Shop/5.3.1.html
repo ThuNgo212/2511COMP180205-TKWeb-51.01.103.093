@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <title> HCMUE Shop </title>
+  <style>
+    body 
+    {
+      scroll-behavior: smooth;
+    }
+    .hh-header 
+    {
+      position: relative;
+      height: 170px;
+    }
+    .hh-logo 
+    {
+      position: absolute;
+      right: 0px;
+      width: 300px;
+      height: 150px;
+      padding-bottom: 20px;
+    }
+    .hh-company 
+    {
+      position: absolute;
+      top: 60px;
+      left: 30px;
+      font-family: Impact;
+      font-size: 42px;
+      text-shadow: 0 0 2px black;
+      margin: 0;
+    }
+    .hh-slogan 
+    {
+      position: absolute;
+      top: 110px;
+      left: 32px;
+      font-size: 18px;
+      color: #444;
+      margin: 0;
+    }
+    .hh-sheet 
+    {
+      box-shadow: 0 0 5px lightgray;
+      border-radius: 10px;
+      padding: 5px;
+      position: relative;
+      top: -10px;
+      margin-top: 20px;
+    }
+    .hh-product 
+    {
+      text-align: center;
+      padding: 5px 2px;
+    }
+    .hh-product .card-body img 
+    {
+      height: 150px;
+      max-width: 95%;
+    }
+    .details 
+    {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <header class="hh-header">
+      <h2 class="hh-company"> HCMUE Shop </h2>
+      <h5 class="hh-slogan" > Gì cũng rẻ, mại dô mại dô </h5>
+      <img class="hh-logo" src="/img/officeworker.png" />
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> HCMUE Shop </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"> <a class="nav-link active" href="#"> Trang chủ </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#"> Giới thiệu </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#"> Sản phẩm </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#"> Liên hệ </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#"> Hỏi đáp </a> </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> Tài khoản </a>
+              <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="#"> Đăng nhập </a> </li>
+                <li> <a class="dropdown-item" href="#"> Đăng xuất </a> </li>
+                <li> <hr class="dropdown-divider"> </li>
+                <li> <a class="dropdown-item" href="#"> Đăng ký </a> </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm">
+            <button class="btn btn-outline-success" type="submit"> Tìm </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row mt-4">
+      <div class="col-md-9">
+        <div class="row hh-sheet">
+
+          <div class="col-md-4 hh-product">
+            <a href="5.3.chitietsanpham.html" class="details">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> iPhone 17 Pro Max </h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/iphone-17-pro-max-xanh-duong-thumb-600x600.jpg" class="img-fluid">
+                </div>
+                <div class="card-footer"> 36,990,000 triệu đồng </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 hh-product">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> iPhone 17 Pro </h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/iphone-17-pro.jpg" class="img-fluid">
+                </div>
+                <div class="card-footer"> 34,990,000 triệu đồng </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 hh-product">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> iPhone 16 Pro Max </h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/iphone-16-pro-max.jpg" class="img-fluid">
+                </div>
+                <div class="card-footer"> 30,590,000 triệu đồng </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 hh-product">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> iPhone Air </h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/iphone-air.jpg" class="img-fluid">
+                </div>
+                <div class="card-footer"> 31,490,000 triệu đồng </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 hh-product">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> iPhone 16 </h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/iphone-16-blue-600x600.png" class="img-fluid">
+                </div>
+                <div class="card-footer"> 21,590,000 triệu đồng </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 hh-product">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> iPhone 17 256GB </h4>
+                </div>
+                <div class="card-body">
+                    <img src="/img/iphone-17.jpg" class="img-fluid">
+                </div>
+                <div class="card-footer"> 24,990,000 triệu đồng </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card hh-card mb-3">
+          <div class="card-header"> <b> Giỏ hàng </b> </div>
+          <div class="card-body text-center">
+            <img src="/img/shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" class="img-fluid mb-2">
+            <ul class="list-unstyled">
+              <li> 1 sản phẩm </li>
+              <li> 30,000,000 </li>
+              <li> <a href="#"> Xem giỏ hàng </a> </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card hh-card mb-3">
+          <div class="card-header">
+            <img src="/img/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">
+            <b> Chủng loại </b>
+          </div>
+          <div class="list-group list-group-flush">
+            <a href="5.3.1.html" class="list-group-item"> Điện thoại <span class="badge bg-primary rounded-pill"> 6 </span> </a>
+            <a href="5.3.1.laptop.html" class="list-group-item"> Laptop <span class="badge bg-primary rounded-pill"> 6 </span> </a>
+            <a href="#" class="list-group-item"> Phụ kiện </a>
+            <a href="#" class="list-group-item"> Smart Watch </a>
+            <a href="#" class="list-group-item"> Đồng hồ </a>
+            <a href="#" class="list-group-item"> Máy in </a>
+          </div>
+        </div>
+
+        <div class="card hh-card">
+          <div class="card-header">
+            <img src="/img/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">
+            <b> Tìm kiếm </b>
+          </div>
+          <div class="card-body">
+            <input type="text" class="form-control" placeholder="Nhập tên sản phẩm">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="row card mt-4">
+      <div class="card-body text-center"> HCMUE - Ngô Hoàng Anh Thư &copy; 2025 </div>
+    </footer>
+  </div>
+</body>
+</html>
