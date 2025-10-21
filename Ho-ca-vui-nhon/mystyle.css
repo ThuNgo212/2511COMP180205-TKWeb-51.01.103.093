@@ -1,0 +1,157 @@
+body 
+{
+    overflow: hidden;
+    margin: 0;
+}
+
+#aquarium 
+{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(#aee0ff90, #68c1e690), url("img3/ocean.gif") no-repeat center center;
+    background-size: cover;
+}
+
+#shark 
+{
+    position: absolute;
+    top: 300px;
+    left: -300px;
+    animation-name: Shark;
+    animation-duration: 20s; /* nhanh hơn */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes Shark 
+{
+    0%   { left: -300px; top: 300px; transform: scaleX(1); }
+    45%  { left: 1000px; top: 250px; transform: scaleX(1); }
+    50%  { transform: scaleX(-1); }
+    95%  { left: -300px; top: 320px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
+}
+
+#diver1 
+{
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    animation-name: diver1;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes diver1 
+{
+    0%   { left: -200px; top: 450px; transform: scaleX(1); }
+    40%  { left: 900px; top: 420px; transform: scaleX(1); }
+    50%  { transform: scaleX(-1); }
+    90%  { left: -200px; top: 460px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
+}
+
+#diver2 
+{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    animation-name: diver2;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes diver2 
+{
+    0%   { left: 100%; top: 100px; transform: scaleX(-1); }
+    20%  { left: 70%; top: 80px; transform: scaleX(1); }
+    40%  { left: 200px; top: 180px; transform: scaleX(-1); }
+    50%  { transform: scaleX(1); }
+    100% { left: 100%; top: 100px; transform: scaleX(1); }
+}
+
+#diver3 
+{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    animation-name: diver3;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes diver3 
+{
+    0%   { left: -150px; top: 350px; transform: scaleX(1); }
+    50%  { left: 1000px; top: 380px; transform: scaleX(1); }
+    51%  { transform: scaleX(-1); }
+    100% { left: -150px; top: 350px; transform: scaleX(-1); }
+}
+
+#faintSchool 
+{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    animation-name: faintSchool;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    opacity: 0.8;
+}
+
+@keyframes faintSchool 
+{
+    0%   { bottom: 0; opacity: 0.9; transform: scale(1); }
+    60%  { opacity: 0.8; transform: scale(1.2); }
+    100% { bottom: 650px; opacity: 0; transform: scale(1.4); }
+}
+
+#goldFishSchool 
+{
+    position: absolute;
+    top: 500px;
+    left: 100%;
+    animation-name: goldFishSchool;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes goldFishSchool
+{
+    0%   { left: 100%; top: 500px; transform: scaleX(-1); }
+    40%  { left: -200px; top: 520px; transform: scaleX(-1); }
+    50%  { transform: scaleX(1); }
+    100% { left: 100%; top: 500px; transform: scaleX(1); }
+}
+
+#turtle 
+{
+    position: absolute;
+    top: 580px;
+    left: -200px;
+    animation-name: Turtle;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes turtle 
+{
+    0%   { left: -200px; top: 580px; transform: scaleX(1); }
+    50%  { left: 1000px; top: 600px; transform: scaleX(1); }
+    51%  { transform: scaleX(-1); }
+    100% { left: -200px; top: 580px; transform: scaleX(-1); }
+}
