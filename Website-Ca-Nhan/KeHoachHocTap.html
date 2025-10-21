@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <title> Giới thiệu bản thân </title>
+        <style>
+            body {
+                scroll-behavior: smooth;
+                background-image: url("/img/hcmue.jpg"); /* đổi đường dẫn ảnh ở đây */
+                background-size: cover;       /* ảnh phủ kín */
+                background-position: center;  /* căn giữa */
+                background-repeat: no-repeat; /* không lặp lại */
+                min-height: 100vh;
+            }
+            img {
+                width: 50px;
+            }
+            footer {
+                text-align:center;
+                padding:20px;
+                background:#eee;
+                font-size:14px;
+            }
+
+            /* 💡 CSS làm mờ bảng */
+            table {
+                background: rgba(255, 255, 255, 0.2);   /* nền trong suốt */
+                backdrop-filter: blur(8px);             /* hiệu ứng kính mờ */
+                -webkit-backdrop-filter: blur(8px);     /* hỗ trợ Safari */
+                border-radius: 8px;
+            }
+            th, td {
+                background: rgba(255, 255, 255, 0.25);  /* ô trong suốt */
+            }
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <img src="/img/logohcmue.png"> </img>
+        <a class="navbar-brand" href="1.6.html"> HCMUE </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="TrangChu.html"> Trang chủ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="KeHoachHocTap.html"> Kế hoạch học tập </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="SoThich.html"> Sở thích </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="LienHe.html"> Liên hệ </a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="col-8 m-auto">
+            <div class="card text-center">
+                <div class="card-header"> <b> Kế hoạch học tập </b> </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th> Tuần </th>
+                            <th> Mục tiêu </th>
+                            <th> Hoạt động cụ thể </th>
+                            <th> Kết quả mong đợi </th>
+                        </tr>
+                        <tr>
+                            <th> 1 </th>
+                            <td> Làm quen với trường và ngành học </td>
+                            <td> 
+                                -Tìm hiểu chương trình đào tạo, các môn học.<br>
+                                -Thiết lập lịch học cá nhân trên Google Scholar.<br> 
+                                -Làm quen thầy cô, bạn bè, môi trường học tập.
+                            </td>
+                            <td> 
+                                -Biết rõ lộ trình học.<br>
+                                -Có lịch học – sinh hoạt cân đối.<br>
+                                -Có bạn học nhóm.
+                            </td>
+                        </tr>
+                        <tr> 
+                            <th> 2 </th>
+                            <td> Rèn kỹ năng học ở bậc ĐH & củng cố kiến thức nền </td>
+                            <td> 
+                                -Học cách ghi chép tài liệu hiệu quả, quản lý thời gian.<br>
+                                -Làm quen với lập trình cơ bản qua tài liệu và bài giảng.
+                            </td>
+                            <td>
+                                -Tiết kiệm thời gian ghi chép mà vẫn nắm rõ nội dung bài.<br>
+                                -Viết được các câu lệnh từ đơn giản đến nâng cao.
+                            </td>
+                        </tr>
+                        <tr> 
+                            <th> 3 </th>
+                            <td> Tìm hiểu các web hỗ trợ việc học </td>
+                            <td>
+                                -Tập sử dụng công cụ quản lý học tập: Google drive, Notion/Trello.<br>
+                                -Tìm tài liệu từ thư viện số.
+                            </td>
+                            <td> -Tìm kiếm và trích dẫn tài liệu chuẩn. </td>
+                        </tr>
+                        <tr> 
+                            <th> 4 </th>
+                            <td> Ổn định nhịp học, định hướng phát triển </td>
+                            <td> 
+                                -Theo dõi tiến độ học tập, tự đánh giá điểm mạnh và điểm cần cải thiện.<br>
+                                -Viết bản kế hoạch cho việc học tập và rèn luyện cho 1 năm tới.
+                            </td>
+                            <td> -Nắm rõ thói quen học tập phù hợp với bản thân. </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-footer text-body-secondary"> Kế hoạch học tập </div>
+            </div>
+        </div> 
+    </div>
+    <br>
+    <footer> © 2025 Ngô Hoàng Anh Thư </footer>
+</body>
+</html>

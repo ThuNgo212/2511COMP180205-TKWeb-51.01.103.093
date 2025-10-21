@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <title> Giới thiệu bản thân </title>
+        <style>
+            body 
+            {
+                scroll-behavior: smooth;
+                background-image: url("/img/hcmue.jpg"); 
+                background-size: cover;       /* ảnh phủ kín */
+                background-position: center;  /* căn giữa */
+                background-repeat: no-repeat; /* không lặp lại */
+                min-height: 100vh;
+            }
+            img
+            {
+                width: 50px;
+            }
+            section
+            {
+                font-size: 20px;
+                width:90%;
+                max-width:1000px;
+                margin:100px auto 60px auto;
+                background: lightgray;
+                padding:30px;
+                border-radius:8px;
+                box-shadow:0 2px 6px rgba(0,0,0,0.1);
+            }
+            .hobby-grid
+            {
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+                gap:20px;
+            }
+            .hobby-item
+            {
+                background:#f0f8ff;
+                padding:15px;
+                border-radius:8px;
+                text-align:center;
+                transition:transform 0.2s;
+            }
+            .hobby-item:hover{transform:scale(1.05);}
+            form input,form textarea
+            {
+                width:100%;
+                padding:10px;
+                margin-bottom:15px;
+                border:1px solid #ccc;
+                border-radius:4px;
+            }
+            footer
+            {
+                text-align:center;
+                padding:20px;
+                background:#eee;
+                font-size:14px;
+            }
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <img src="/img/logohcmue.png"> </img>
+        <a class="navbar-brand" href="1.6.html"> HCMUE </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="TrangChu.html"> Trang chủ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="KeHoachHocTap.html"> Kế hoạch học tập </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Sở thích </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="LienHe.html"> Liên hệ </a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <br>
+    <section id="hobby">
+        <h2> Sở thích </h2>
+        <br>
+        <div class="hobby-grid">
+            <div class="hobby-item">
+                <h3> Âm nhạc </h3>
+                <p> Nhạc K-pop </p>
+                <p> Nhạc V-pop </p>
+                <p> Nhạc Pop </p>
+            </div>
+            <div class="hobby-item">
+                <h3> Thể thao </h3>
+                <p> Chơi cầu lông </p>
+                <p> Chơi bóng rổ </p>
+                <p> Chạy bộ </p>
+            </div>
+            <div class="hobby-item">
+                <h3> Đọc sách </h3>
+                <p> Truyện trinh thám </p>
+                <p> Truyện tranh </p>
+                <p> Tiểu thuyết </p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer> © 2025 Ngô Hoàng Anh Thư </footer>
+</body>
+</html>
